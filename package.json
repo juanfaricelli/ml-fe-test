@@ -1,0 +1,22 @@
+{
+  "name": "ml-fe-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build-css": "node-sass --include-path scss ./styles/styles.scss ./public/stylesheets/styles.css",
+    "start": "npm run build-css && node ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "express-react-views": "^0.10.4",
+    "morgan": "~1.9.0",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

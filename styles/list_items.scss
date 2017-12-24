@@ -1,0 +1,20 @@
+@import "colors";
+
+/* ListItems Component */
+section#search-results {
+  .results-list {
+    background-color: $color-white;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    hr {
+      margin: 0 16px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+/* END ListItems Component */

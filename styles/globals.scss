@@ -1,0 +1,10 @@
+@import "colors";
+
+.ml-test-app {
+  margin: 0;
+  background-color: $color-ligtest-grey;
+  font-family: "Proxima Nova",Helvetica,Arial,sans-serif;
+  footer {
+    height: 50px;
+  }
+}

@@ -1,0 +1,25 @@
+@import "colors";
+
+/* NoResults Component */
+section#search-results {
+  .results-list {
+    background-color: $color-white;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    .no-results-page {
+      margin-top: 16px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      text-align: center;
+    }
+    .no-results {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+}
+/* END NoResults Component */

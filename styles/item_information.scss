@@ -1,0 +1,126 @@
+@import "colors";
+
+/* ItemInformation Component */
+section#item-view {
+  .item-information {
+    background-color: $color-white;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    .item-img {
+      margin: 16px;
+      width: 680px;
+    }
+
+    .item-description-content {
+      margin-left: 30px;
+
+      .item-description-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+        font-weight: normal;
+      }
+      .item-description {
+        font-size: 16px;
+        margin-bottom: 27px;
+        color: $color-grey;
+        word-wrap: break-word;
+      }
+    }
+
+    .item-price-block {
+      margin-top: 32px;
+      margin-right: 32px;
+      .item-condition {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      .item-title {
+        font-size: 24px;
+        margin: 0;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .item-price {
+        font-size: 46px;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        &-decimals {
+          font-size: 23px;
+          vertical-align: super;
+        }
+      }
+      .item-free-shipping {
+        color: $color-green;
+        margin-bottom: 32px;
+      }
+      button {
+        background-color: $color-primary-blue;
+        border-color: $color-primary-blue;
+      }
+    }
+  }
+}
+
+@mixin mobile-view() {
+  section#item-view {
+    .item-information {
+      .item-price-block {
+        margin-left: 32px;
+        margin-bottom: 32px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media only screen
+and (min-device-width : 360px)
+and (max-device-width : 640px) {
+  @include mobile-view();
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  @include mobile-view();
+}
+
+@media only screen
+and (min-device-width : 412px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+  @include mobile-view();
+}
+
+@mixin responsive-view() {
+  section#item-view {
+    .item-information {
+      .item-price-block {
+        .item-price {
+          font-size: 37px;
+          &-decimals {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  @include responsive-view();
+}
+
+@media only screen
+and (max-width : 767px) {
+  @include mobile-view();
+}
+
+/* END ItemInformation Component */

@@ -1,0 +1,24 @@
+@import "colors";
+
+/* CategoriesBar Component */
+section#categories {
+  ul {
+    padding-left: 0;
+    font-size: 14px;
+    color: $color-grey;
+    span {
+      .item {
+        display:inline;
+        padding-right: 5px;
+        a {
+          text-decoration: none;
+          color: $color-grey;
+        }
+      }
+      .separator {
+        padding-right: 5px;
+      }
+    }
+  }
+}
+/* END CategoriesBar Component */

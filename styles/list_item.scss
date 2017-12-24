@@ -1,0 +1,103 @@
+@import "colors";
+
+/* ListItem Component */
+section#search-results {
+  .results-list {
+    .list-item {
+      padding: 16px 0 0 16px;
+
+      .list-item-img {
+        float: left;
+        img {
+          height: 180px;
+          width: 180px;
+          margin-right: 16px;
+          margin-bottom: 16px;
+          vertical-align: top;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+        }
+      }
+      .list-item-price {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        a {
+          text-decoration: none;
+          color: $color-darkest-grey;
+          font-size: 24px;
+        }
+        .currency {
+          padding-right: 5px;
+        }
+        .free-shipping {
+          padding-left: 10px;
+        }
+      }
+      .list-item-title {
+        margin: 0;
+        font-size: 18px;
+        a {
+          text-decoration: none;
+          color: $color-darkest-grey;
+          font-weight: normal;
+        }
+      }
+      .list-item-location {
+        margin-top: 22px;
+        font-size: 12px;
+        color: $color-dark-grey;
+      }
+    }
+  }
+}
+
+@mixin tablet-mobile-view() {
+  section#search-results {
+    .results-list {
+      .list-item {
+        .list-item-title {
+          margin-top: 16px;
+        }
+        .list-item-location {
+          margin-top: 16px;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen
+and (min-device-width : 360px)
+and (max-device-width : 640px) {
+  @include tablet-mobile-view();
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  @include tablet-mobile-view();
+}
+
+@media only screen
+and (min-device-width : 412px)
+and (max-device-width : 736px)
+and (orientation : portrait) {
+  section#search-results {
+    .results-list {
+      .list-item {
+        .list-item-img {
+          float: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  @include tablet-mobile-view();
+}
+/* END ListItem Component */
