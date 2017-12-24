@@ -4,17 +4,14 @@ import SearchBar from './components/search_bar';
 import CategorieshBar from './components/categories_bar';
 import ItemInformation from './components/item-view/item_information';
 import ReactDOMServer from 'react-dom/server';
+import utils from '../utils/utils';
 
 
 class ItemDescriptionPage extends Component {
   render() {
-    const pageTitle = (titleString) => {
-      return titleString.charAt(0).toUpperCase() + titleString.slice(1);
-    }
-
     return (
       <html>
-        <Head pageTitlePrefix={pageTitle(this.props.pageTitlePrefix)} />
+        <Head pageTitlePrefix={utils.capitalize(this.props.pageTitlePrefix)} />
         <body className="ml-test-app">
           <SearchBar />
           <main className="container-fluid">

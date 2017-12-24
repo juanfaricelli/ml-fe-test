@@ -40,11 +40,11 @@ router.get('/:itemId', (req, res, next) => {
 
   const getItemDetails = () => {
     return axios.get(`https://api.mercadolibre.com/items/${itemId}`);
-  }
+  };
 
   const getItemDescription = () => {
     return axios.get(`https://api.mercadolibre.com/items/${itemId}/description`);
-  }
+  };
 
   const showNoResults = () => {
     res.render('index', { noResults: true });
