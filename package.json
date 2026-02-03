@@ -9,7 +9,7 @@
   "dependencies": {
     "axios": "^0.30.2",
     "body-parser": "~1.20.4",
-    "cookie-parser": "~1.4.3",
+    "cookie-parser": "~1.4.7",
     "debug": "~2.6.9",
     "express": "~4.22.0",
     "express-react-views": "^0.10.4",
